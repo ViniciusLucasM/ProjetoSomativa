@@ -1,0 +1,16 @@
+name: CI - Testes e Validação
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Fazer o Checkout do código
+      uses: actions/checkout@v4
+
+    - name: Executar verificação de sucesso
+      run: echo "O GitHub Actions está configurado e rodando com sucesso na PR!"
