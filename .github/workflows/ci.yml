@@ -12,5 +12,10 @@ jobs:
     - name: Fazer o Checkout do código
       uses: actions/checkout@v4
 
-    - name: Executar verificação de sucesso
-      run: echo "O GitHub Actions está configurado e rodando com sucesso na PR!"# Comentário para disparar o acionamento da PR
+    - name: Configurar o Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Executar os 5 testes unitários
+      run: python -m unittest test_calculadora.py
