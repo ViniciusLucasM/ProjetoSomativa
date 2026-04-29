@@ -13,4 +13,4 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Executar verificação de sucesso
-      run: echo "O GitHub Actions está configurado e rodando com sucesso na PR!"
+      run: echo "O GitHub Actions está configurado e rodando com sucesso na PR!"# Comentário para disparar o acionamento da PR
